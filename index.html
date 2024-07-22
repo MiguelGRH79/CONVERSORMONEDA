@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moneda</title>
+    <!-- Enlace a la fuente Inter de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Contenedor principal del conversor -->
+    <div class="contenedor-conversor">
+        <!-- Formulario del conversor -->
+        <div class="conversor">
+            <h1>Conversor de Moneda</h1>
+            <!-- Campo de entrada para el monto -->
+            <input type="number" id="monto" placeholder="Ingrese el monto">
+            <!-- Selector para la moneda de origen -->
+            <select id="monedaOrigen">
+                <option value="USD">Dólar Estadounidense</option>
+                <option value="EUR">Euro</option>
+                <option value="JPY">Yen Japonés</option>
+                <option value="GBP">Libra Esterlina</option>
+                <option value="MXN">Peso Mexicano</option>
+            </select>
+            <!-- Selector para la moneda de destino -->
+            <select id="monedaDestino">
+                <option value="USD">Dólar Estadounidense</option>
+                <option value="EUR">Euro</option>
+                <option value="JPY">Yen Japonés</option>
+                <option value="GBP">Libra Esterlina</option>
+                <option value="MXN">Peso Mexicano</option>
+            </select>
+            <!-- Botón para convertir -->
+            <button onclick="convertirMoneda()">Convertir</button>
+            <!-- Elemento para mostrar el resultado -->
+            <div id="resultado"></div>
+        </div>
+    </div>
+    <!-- Enlace al archivo de script JavaScript -->
+    <script src="aplicacion.js"></script>
+</body>
+</html>

@@ -71,6 +71,47 @@ body {
     font-weight: bold;
 }
 
+/* Estilos para el footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para la animación de pixelado */
+.pixelated-text {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    animation: pixelate 2s infinite alternate;
+}
+
+/* Keyframes para la animación de pixelado */
+@keyframes pixelate {
+    0% {
+        text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffff;
+        transform: translate(0);
+    }
+    25% {
+        text-shadow: -2px 2px 0 #ff00ff, 2px -2px 0 #00ffff;
+    }
+    50% {
+        text-shadow: -2px -2px 0 #ff00ff, 2px 2px 0 #00ffff;
+        transform: translate(2px, 2px);
+    }
+    75% {
+        text-shadow: 2px -2px 0 #ff00ff, -2px 2px 0 #00ffff;
+    }
+    100% {
+        text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffff;
+        transform: translate(0);
+    }
+}
+
 /* Responsive para tablet */
 @media (max-width: 768px) {
     .conversor {
